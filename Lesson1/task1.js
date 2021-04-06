@@ -36,10 +36,3 @@ console.log(typeof (z) + ' ' + z);
 var z = x * y;
 console.log(typeof (z) + ' ' + z);
 
-
-
-
-
-
-
-
