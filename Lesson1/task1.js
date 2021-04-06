@@ -8,7 +8,7 @@
 
 'use strict'
 
-// 1.
+// 1.          Вопрос, почему выдает "ReferenceError: alert is not defined"? Как отлаживать?
 viewAlert(20);
 
 function viewAlert(Tc) {
@@ -35,6 +35,8 @@ console.log(typeof (z) + ' ' + z);
 
 var z = x * y;
 console.log(typeof (z) + ' ' + z);
+
+
 
 
 
