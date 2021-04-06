@@ -8,7 +8,7 @@
 
 'use strict'
 
-// 1.          Вопрос, почему выдает "ReferenceError: alert is not defined"? Как отлаживать?
+// 1.          Вопрос, почему выдает "ReferenceError: alert is not defined"? Как отлаживать? 
 viewAlert(20);
 
 function viewAlert(Tc) {
