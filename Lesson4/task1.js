@@ -20,9 +20,9 @@ function getRank(num) {
         console.log("Число должно быть положительным от 0 до 999");
         return numClass;
     }
-    numClass.единицы = numStr[2];
-    numClass.десятки = numStr[1];
-    numClass.сотни = numStr[0];
+    numClass.единицы = +numStr[2];
+    numClass.десятки = +numStr[1];
+    numClass.сотни = +numStr[0];
     return numClass;
         
 }      
