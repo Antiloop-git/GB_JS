@@ -28,3 +28,5 @@ function getRank(num) {
 }      
 
 console.log(getRank(num));
+
+
