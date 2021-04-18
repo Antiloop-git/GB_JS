@@ -24,7 +24,7 @@ for (let i = 0; i < 10; i++) {
       td.textContent = numLetters.charAt(8 - i);
       tr.append(td);
       if (j === 9) {
-          td.className = "rotate";
+        td.classList.add('rotate');
       }
       continue;
 
@@ -35,7 +35,7 @@ for (let i = 0; i < 10; i++) {
       td.classList.add('letter');
       tr.append(td);
       if (i === 0) {
-        td.className = "rotate";
+        td.classList.add('rotate');
       }
       continue;
     }
@@ -58,17 +58,20 @@ for (let i = 0; i < 10; i++) {
       }
 
       if (i === 1)  {
-        td.innerHTML = blackChessmen[j-1] 
+        td.innerHTML = blackChessmen[j-1];
+        td.classList.add('rotate');
         tr.append(td);
       }
   
       if (i === 2)  {
         td.innerHTML = "&#9823;"; 
+        td.classList.add('rotate');
         tr.append(td);
       }
+
+   
   }
   table.append(tr);
 }
 
-// document.divContainer.append(table);
 document.divContainer.append(table);
