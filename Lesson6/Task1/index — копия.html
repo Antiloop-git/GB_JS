@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel=" stylesheet" href="style.css">
+
+  <script>
+    
+    function​ init1​() {
+      ​var​ images ​=​ document​.​getElementsByTagName​(​"img"​);
+      ​for​ ​(​var​ i ​=​ ​0​;​ i ​<​ images​.​length​;​ i​++)​ {
+      images​[​i​].​onclick ​=​ changeBigPicture;
+      }
+    }
+    
+    function​ changeBigPicture​(​eventObj​) {
+      alert("qqqqqqqqqqqqqq");​
+      var​ appDiv ​=​ document​.​getElementById​(​"big_picture"​);
+      appDiv​.​innerHTML ​=​ ​"";
+      ​var​ eventElement ​=​ eventObj​.​target;
+      ​var​ imageNameParts ​=​ eventElement​.​id​.​split​(​"_"​);
+      ​var​ src ​=​ ​"Big/"​ ​+​ imageNameParts​[​1​]​ ​+​ ​".svg";
+      ​var​ imageDomElement ​=​ document​.​createElement​(​"img"​);
+      imageDomElement​.​src ​=​ src;
+      appDiv​.​appendChild​(​imageDomElement​);
+    }
+    
+    window​.​onload ​=​ init1;
+
+    // function changeBigPicture(Ind){
+      // var​ images ​=​ document​.​getElementsByTagName​(​"img"​);
+      // for​ ​(​var​ i ​=​ ​0​;​ i ​<​ images​.​length​;​ i​++)​ {
+      // images​[​i​].​onclick ​=​ changeBigPicture;
+
+    //   var bigPhoto = document.getElementById("bigPhotoID");
+    //   bigPhoto.src = 'Big/' + Ind + '.svg';
+
+    //   bigPhoto. onerror = function() {
+    //   alert("Error loading " + this.src); // Ошибка загрузки https://example.com/404.js
+    // };  
+    
+    // function changeBigPicture(Ind){
+    //   var bigPhoto = document.getElementById("bigPhotoID");
+    //   bigPhoto.src = 'Big/' + Ind + '.svg';
+    // }
+
+  </script>
+
+</head>
+
+<body>
+  <div id="big_picture">
+    
+  </div>
+
+  ​<div​ id="gallery">
+    <img onclick="changeBigPicture()​" ​id="image_1" src="Small/1.svg" alt="photo 1">
+    <img ​id="image_2" src="Small/2.svg" alt="photo 2">
+    <img ​id="image_3" src="Small/3.svg" alt="photo 3">
+  ​</div>
+
+  <!-- <div class="our_finished_project container">
+
+
+    <div class="our_finished_project_parent">
+      <div class="our_finished_project_item">
+        <img onclick="changeBigPicture()" class="our_finished_project_img" src="Small/1.svg" alt="photo 1">
+      </div>
+      <div class="our_finished_project_item">
+        <img onclick="changeBigPicture()" class="our_finished_project_img" src="Small/2.svg" alt="photo 2">
+      </div>
+      <div class="our_finished_project_item">
+        <img onclick="changeBigPicture(forInicialError)" class="our_finished_project_img" src="Small/3.svg" alt="photo 3">
+      </div>
+    </div>
+
+    
+    <div class="wrapper exmp3">
+        <img id = "bigPhotoID" src="Big/1.svg" alt="photo 1">
+    </div>
+
+  </div> -->
+
+
+
+</body>
+
+</html>
+
+
+
+<!--
+
+ -->
